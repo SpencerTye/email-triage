@@ -14,8 +14,7 @@ Two checks sit around the model:
      Urgent and reply are never overridden.
   2. Anomaly bucket. If the model is unreachable, returns something that
      is not valid JSON, or picks a bucket that doesn't exist, the email
-     goes to a visible "anomaly" bucket with the reason, instead of being
-     guessed.
+     goes to a visible "anomaly" bucket with the reason.
 
 --dry-run skips the model and uses each source's default bucket.
 
@@ -57,14 +56,14 @@ LLM_BUCKETS = ("urgent", "reply", "fyi", "promo")
 
 SOURCE_DEFAULT_BUCKET = {
     "outlook_forward": "reply",
-    "work_forward": "reply",
+    "gmail_uw_forward": "reply",
     "gmail_primary": "reply",
     "gmail_updates": "fyi",
     "unknown": "promo",
 }
 
 SOURCE_ORIGIN_TAG = {
-    "work_forward": "Work",
+    "gmail_uw_forward": "UW",
     "outlook_forward": "Outlook",
     "gmail_primary": "Gmail",
     "gmail_updates": "Gmail (Updates)",

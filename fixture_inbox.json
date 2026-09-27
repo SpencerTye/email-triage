@@ -8,7 +8,7 @@
       "to": "you@work.example.edu",
       "subject": "Re: committee meeting availability",
       "date": "2026-04-13T18:42:00-05:00",
-      "labels": ["work"],
+      "labels": ["UW"],
       "body_text": "Hi, I can do Tuesday 3pm or Thursday 11am next week. Let me know which works. -Jane"
     },
     {

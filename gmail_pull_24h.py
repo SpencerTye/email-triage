@@ -6,7 +6,7 @@ normalized JSON file for compose_brief.py.
 
 Each message gets a `source` tag from its Gmail labels, so the brief can
 show where it came from:
-  - label "work"         -> work_forward     (mail forwarded from a work account)
+  - label "UW"           -> gmail_uw_forward (mail forwarded from a university account)
   - label "from-outlook" -> outlook_forward  (mail forwarded from Outlook)
   - category/updates     -> gmail_updates
   - category/primary     -> gmail_primary
@@ -24,7 +24,7 @@ Credentials INI shape (written by setup_gmail_creds.py):
     app_password = XXXXXXXXXXXXXXXX
     imap_host = imap.gmail.com
     imap_port = 993
-    query = (category:primary OR category:updates OR label:work OR label:from-outlook) newer_than:1d
+    query = (category:primary OR category:updates OR label:UW OR label:from-outlook) newer_than:1d
     mailbox = [Gmail]/All Mail
     max_messages = 500
 
@@ -50,7 +50,7 @@ from typing import Any
 BODY_TRUNCATE_CHARS = 4096
 SCHEMA_VERSION = 1
 DEFAULT_QUERY = (
-    "(category:primary OR category:updates OR label:work OR label:from-outlook) "
+    "(category:primary OR category:updates OR label:UW OR label:from-outlook) "
     "newer_than:1d"
 )
 DEFAULT_MAILBOX = "[Gmail]/All Mail"
@@ -95,8 +95,8 @@ def classify_source(labels: list[str]) -> str:
     origin per item.
     """
     normalized = {l.lower() for l in labels}
-    if "work" in normalized:
-        return "work_forward"
+    if "uw" in normalized:
+        return "gmail_uw_forward"
     if "from-outlook" in normalized:
         return "outlook_forward"
     if "category/updates" in normalized or "category_updates" in normalized:

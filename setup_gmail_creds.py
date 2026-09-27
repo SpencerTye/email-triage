@@ -38,7 +38,7 @@ from pathlib import Path
 DEFAULT_IMAP_HOST = "imap.gmail.com"
 DEFAULT_IMAP_PORT = 993
 DEFAULT_MAILBOX = "[Gmail]/All Mail"
-DEFAULT_QUERY = "(category:primary OR category:updates OR label:work OR label:from-outlook) newer_than:1d"
+DEFAULT_QUERY = "(category:primary OR category:updates OR label:from-outlook) newer_than:1d"
 DEFAULT_MAX_MESSAGES = "500"
 
 
