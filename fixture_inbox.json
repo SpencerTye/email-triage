@@ -1,0 +1,85 @@
+{
+  "_comment": "Sample inbox for dry runs. All messages are made up. Shape mimics what the real IMAP parser will produce. Dates are fictional sample values in the message headers; the fetcher does NOT derive dates from file timestamps.",
+  "messages": [
+    {
+      "id": "fx-0001",
+      "thread_id": "t-fx-0001",
+      "from": "Jane Doe <jane.doe@work.example.edu>",
+      "to": "you@work.example.edu",
+      "subject": "Re: committee meeting availability",
+      "date": "2026-04-13T18:42:00-05:00",
+      "labels": ["work"],
+      "body_text": "Hi, I can do Tuesday 3pm or Thursday 11am next week. Let me know which works. -Jane"
+    },
+    {
+      "id": "fx-0002",
+      "thread_id": "t-fx-0002",
+      "from": "GEO Alerts <noreply@ncbi.nlm.nih.gov>",
+      "to": "you@gmail.example.com",
+      "subject": "New dataset matches your saved search: caloric restriction RNA-seq",
+      "date": "2026-04-14T02:03:00-05:00",
+      "labels": ["category/updates"],
+      "body_text": "GEO accession GSE999999. Title: Caloric restriction time course in mouse liver. Platform: GPL24247. Samples: 48. https://example/geo/GSE999999"
+    },
+    {
+      "id": "fx-0003",
+      "thread_id": "t-fx-0003",
+      "from": "Linear <notifications@linear.app>",
+      "to": "you@gmail.example.com",
+      "subject": "5 new issues assigned to you",
+      "date": "2026-04-14T06:10:00-05:00",
+      "labels": ["category/updates"],
+      "body_text": "You have 5 new issues in project INGEST. Top priority: fix batch assignment in ingest_v3."
+    },
+    {
+      "id": "fx-0004",
+      "thread_id": "t-fx-0004",
+      "from": "Lab Safety Office <safety@work.example.edu>",
+      "to": "you@work.example.edu",
+      "subject": "ACTION REQUIRED: annual chemical hygiene refresher due Friday",
+      "date": "2026-04-14T07:45:00-05:00",
+      "labels": ["from-outlook"],
+      "body_text": "Your chemical hygiene refresher training expires in 2 days. Complete the online module at training.example.edu/chs to remain compliant."
+    },
+    {
+      "id": "fx-0005",
+      "thread_id": "t-fx-0005",
+      "from": "Greenhouse <no-reply@boards.greenhouse.io>",
+      "to": "you@gmail.example.com",
+      "subject": "New job at Example Bio: Computational Biologist II",
+      "date": "2026-04-14T05:00:00-05:00",
+      "labels": ["category/updates"],
+      "body_text": "Example Bio is hiring a Computational Biologist II. Remote. Apply at boards.greenhouse.io/examplebio/jobs/1234567."
+    },
+    {
+      "id": "fx-0006",
+      "thread_id": "t-fx-0006",
+      "from": "Bogus Promo <deals@somestore.example>",
+      "to": "you@gmail.example.com",
+      "subject": "48 hours only: 30% off all things",
+      "date": "2026-04-14T04:12:00-05:00",
+      "labels": ["category/promotions"],
+      "body_text": "Thirty percent off everything. Use code SPRING30. Ends soon."
+    },
+    {
+      "id": "fx-0007",
+      "thread_id": "t-fx-0004",
+      "from": "Lab Safety Office <safety@work.example.edu>",
+      "to": "you@work.example.edu",
+      "subject": "REMINDER: chemical hygiene refresher due Friday",
+      "date": "2026-04-14T08:00:00-05:00",
+      "labels": ["from-outlook"],
+      "body_text": "Reminder: due Friday."
+    },
+    {
+      "id": "fx-0008",
+      "thread_id": "t-fx-0008",
+      "from": "Long Reader <longreader@example.com>",
+      "to": "you@gmail.example.com",
+      "subject": "Long body test",
+      "date": "2026-04-14T03:30:00-05:00",
+      "labels": ["inbox"],
+      "body_text": "Lorem ipsum body for truncation testing. This is a repeating string intended to exceed the 4096 character truncation threshold so the fetcher flags body_truncated true. Filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler filler."
+    }
+  ]
+}

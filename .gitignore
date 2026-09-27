@@ -1,0 +1,8 @@
+# Your settings, Gmail credentials, and everything the runs produce (pulls, briefs, dashboard)
+settings.ini
+gmail.ini
+*.cred
+data/
+
+__pycache__/
+*.pyc
